@@ -22,6 +22,8 @@ Plugin 'easymotion/vim-easymotion'
 Plugin 'tpope/vim-fugitive'
 "Plugin 'flazz/vim-colorschemes'
 "Plugin 'altercation/vim-colors-solarized'
+Plugin 'elixir-lang/vim-elixir'
+Plugin 'slashmili/alchemist.vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -83,6 +85,17 @@ set ignorecase
 set smartcase
 
 
+" -------------------------------------------
+" Plugins settings
+" -------------------------------------------
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 
 let mapleader=','
