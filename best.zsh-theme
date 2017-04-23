@@ -38,13 +38,13 @@ prompt_best_setup() {
   zstyle ':zim:git-info' verbose 'yes'
   zstyle ':zim:git-info:branch' format '%b'
   zstyle ':zim:git-info:commit' format '%c'
-  zstyle ':zim:git-info:action' format "(%F{118}%s%f)"
+  zstyle ':zim:git-info:action' format "(%F{yellow}%s%f%F{red})%f"
   #  zstyle ':zim:git-info:clean' format '%F{green}✓'
   zstyle ':zim:git-info:unindexed' format '$F{red}●'
   zstyle ':zim:git-info:untracked' format '$F{red}●'
   zstyle ':zim:git-info:dirty' format '%F{red}●'
   zstyle ':zim:git-info:keys' format \
-    'prompt' ' %F{cyan}⎇  %b%c$(prompt_commit_hash) %C%D'
+    'prompt' ' %F{cyan}⎇  %b%c$(prompt_commit_hash) %C%D %s'
 
   PROMPT="
 $(prompt_best_pwd)\$(prompt_best_git)%f 
