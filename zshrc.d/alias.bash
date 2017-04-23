@@ -21,3 +21,6 @@ alias path='echo -e ${PATH//:/\\n}'
 alias gs="git status"
 alias gc="git checkout"
 alias gd="git difftool --no-prompt --extcmd \"icdiff -NH\""
+alias gl="git log --oneline --decorate --all --graph"
+alias ga="git add ."
+alias gcm="git commit"
