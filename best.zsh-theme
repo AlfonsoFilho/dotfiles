@@ -15,7 +15,7 @@ prompt_best_pwd() {
 prompt_commit_hash() {
   if [ -d .git ]; then
   
-    print -n " %F{bold}[%f%F{yellow}$(git log -1 --pretty=oneline | cut -c -8)%f%F{bold}]%f"
+    print -n " %F{bold}[%f%F{yellow}$(git log -1 --pretty=oneline | cut -c -7)%f%F{bold}]%f"
   fi
 }
 
