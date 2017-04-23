@@ -3,7 +3,9 @@
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # vim
-#git clone https://github.com/VundleVim/Vundle.vim.git .vim/bundle/Vundle.vim
+git clone https://github.com/VundleVim/Vundle.vim.git vim.d/bundle/Vundle.vim
+ln -sfn ${BASEDIR}/vimrc ~/.vimrc
+ln -sfn ${BASEDIR}/vim.d ~/.vim
 
 # tmux
 ln -sfn ${BASEDIR}/tmux.conf ~/.tmux.conf

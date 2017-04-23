@@ -1,6 +1,18 @@
-[push]
-	default = matching
 [fetch]
 	prune = true
 [core]
 	editor = vim
+
+[help]
+
+	# Automatically correct and execute mistyped commands
+	autocorrect = 1
+
+[merge]
+
+	log = true
+
+[push]
+
+	default = matching
+	followTags = true
