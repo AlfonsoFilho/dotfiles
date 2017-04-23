@@ -24,6 +24,7 @@ Plugin 'tpope/vim-fugitive'
 "Plugin 'altercation/vim-colors-solarized'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'slashmili/alchemist.vim'
+Plugin 'bling/vim-airline'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -47,7 +48,7 @@ set noswapfile        " don't make swap file
 set nobackup          " don't make backup file
 set showcmd           " show last command runned
 set mouse=a           " allow mouse
-"set lazyredraw
+set lazyredraw
 set showmode
 
 " -------------------------------------------
