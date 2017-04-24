@@ -14,6 +14,10 @@ if [ -d $HOME/.dotfiles/zshrc.d ]; then
   done 
 fi
 
+# Fix cursor
+typeset -A ZSH_HIGHLIGHT_STYLES
+ZSH_HIGHLIGHT_STYLES[cursor]=underline
+
 #fpath=(~/.zsh/completion $fpath)
 
 #autoload -Uz compinit && compinit -i
