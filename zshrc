@@ -18,6 +18,11 @@ fi
 typeset -A ZSH_HIGHLIGHT_STYLES
 ZSH_HIGHLIGHT_STYLES[cursor]=underline
 
+if command -v tmux>/dev/null; then
+  [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && exec tmux
+fi
+
+
 #fpath=(~/.zsh/completion $fpath)
 
 #autoload -Uz compinit && compinit -i
