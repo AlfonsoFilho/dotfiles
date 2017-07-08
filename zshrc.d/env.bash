@@ -21,7 +21,7 @@ export NODE_REPL_MODE='sloppy';
 
 
 # JAVA
-export JAVA_HOME=/usr/lib/jvm/java-8-oracle/jre/
+export JAVA_HOME=/usr/lib/jvm/java-8-oracle
 
 
 # Andorid Studio
