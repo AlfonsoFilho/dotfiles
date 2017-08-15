@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-apt-get update -yq
+brew update
 
-apt-get install -yq \
+brew install \
   tig \
   httpie \
   tree \
