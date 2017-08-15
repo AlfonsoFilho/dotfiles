@@ -1,8 +1,4 @@
 
-# Easier Copypaste 
-alias pbcopy='xclip -selection clipboard'
-alias pbpaste='xclip -selection clipboard -o'
-
 # Easier navigation: .., ..., ~ and -
 alias ..="cd .."
 alias ...="cd ../.."
@@ -10,7 +6,7 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 alias cl="clear"
-alias ls="command ls --color"
+alias ls="ls -G"
 alias la="ls -lahFog"
 alias mkdir="mkdir -p"
 
