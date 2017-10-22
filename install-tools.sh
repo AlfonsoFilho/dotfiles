@@ -3,11 +3,15 @@
 apt-get update -yq
 
 apt-get install -yq \
+  wget \
+  curl \
   tig \
   httpie \
   tree \
   htop \
-  tree  
+  tree \
+  tmux \
+  vim
 
 
 #
