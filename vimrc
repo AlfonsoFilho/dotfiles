@@ -67,6 +67,8 @@ set cursorline        " show current line highlight
 " -------------------------------------------
 highlight LineNr ctermfg=darkgray guifg=#050505
 
+set backspace=indent,eol,start
+
 "set list
 set listchars=tab:▸\ ,trail:·,eol:¬,nbsp:_
 
