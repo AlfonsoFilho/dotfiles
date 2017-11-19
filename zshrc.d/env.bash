@@ -47,3 +47,6 @@ export PATH="$PATH:$GOROOT/bin"
 
 # Terraform
 export PATH="$PATH:/opt/terraform"
+
+# Rust
+export PATH="$HOME/.cargo/bin:$PATH"
