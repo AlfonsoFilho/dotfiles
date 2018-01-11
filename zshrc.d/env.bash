@@ -49,3 +49,6 @@ export PATH="$PATH:$GOROOT/bin"
 
 # Terraform
 export PATH="$PATH:/opt/terraform"
+
+# ETA
+export PATH="$PATH:$HOME/etlas"
