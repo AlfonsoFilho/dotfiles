@@ -1,19 +1,14 @@
 #!/usr/bin/env bash
 
+set -e
+
+CONFIG="install.conf.yaml"
+DOTBOT_DIR="dotbot"
+
+DOTBOT_BIN="bin/dotbot"
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-# vim
-git clone https://github.com/VundleVim/Vundle.vim.git vim.d/bundle/Vundle.vim
-ln -sfn ${BASEDIR}/vimrc ~/.vimrc
-ln -sfn ${BASEDIR}/vim.d ~/.vim
+cd "${BASEDIR}"
+git submodule update --init --recursive "${DOTBOT_DIR}"
 
-# tmux
-ln -sfn ${BASEDIR}/tmux.conf ~/.tmux.conf
-
-# git
-ln -sfn ${BASEDIR}/gitconfig ~/.gitconfig
-
-# zsh
-ln -sfn ${BASEDIR}/zshrc ~/.zshrc
-ln -sfn ${BASEDIR}/zimrc ~/.zimrc
-ln -sfn ${BASEDIR}/best.zsh-theme ~/.zim/modules/prompt/functions/prompt_best_setup
+"${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"
