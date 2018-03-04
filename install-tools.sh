@@ -11,7 +11,12 @@ apt-get install -yq \
   htop \
   tree \
   tmux \
-  vim
+  vim \
+  ranger \
+  fish \
+  neovim \
+  xclip \
+  shellcheck
 
 
 #
