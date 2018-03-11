@@ -1,7 +1,12 @@
-
 # Make vim the default editor.
 export EDITOR='vim';
 export TERM='xterm-256color';
+
+# History
+export HISTCONTROL=ignoredups
+export HISTCONTROL=ignoreboth
+export HISTSIZE=1000
+export HISTFILESIZE=2000
 
 # Prefer US English and use UTF-8.
 export LANG='en_US.UTF-8';
