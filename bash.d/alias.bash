@@ -18,9 +18,14 @@ alias mkdir="mkdir -p"
 alias path='echo -e ${PATH//:/\\n}'
 
 # Git
-alias gs="git status"
+alias gs="git status --short"
 alias gc="git checkout"
 alias gd="git difftool --no-prompt --extcmd \"icdiff -NH\""
 alias gl="git log --oneline --decorate --all --graph"
 alias ga="git add ."
 alias gcm="git commit"
+
+# Misc
+alias findHere="find . -iname "
+alias psg="ps aux | grep -v grep | grep -i -e VSZ -e"
+alias myip="curl http://ipecho.net/plain; echo"
