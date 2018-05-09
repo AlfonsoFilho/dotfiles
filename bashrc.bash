@@ -19,3 +19,6 @@ if [ -d $HOME/.dotfiles/bash.d ]; then
     source $file
   done 
 fi
+
+#disable suspend feature
+stty -ixon
