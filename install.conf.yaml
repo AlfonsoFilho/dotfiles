@@ -8,5 +8,6 @@
 - link: 
     ~/.bashrc: bashrc.bash
     ~/.gitconfig: gitconfig
+    ~/.tmux.conf: tmux.conf
 
 - shell: []
