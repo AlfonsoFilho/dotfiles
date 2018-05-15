@@ -16,3 +16,7 @@
 
 	default = matching
 	followTags = true
+
+[user]
+	email = alfonsocfilho@gmail.com
+	name = Alfonso Filho
