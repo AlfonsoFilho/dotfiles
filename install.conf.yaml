@@ -6,7 +6,11 @@
 - clean: ['~']
 
 - link: 
-    ~/.bashrc: bashrc.bash
+    # ~/.bashrc: bashrc.bash
+    ~/.zshrc: zshrc
+    ~/.zlogin: zlogin
+    ~/.zimrc: zimrc
+    ~/.zim/modules/prompt/functions/prompt_best_setup: best.zsh-theme
     ~/.gitconfig: gitconfig
     ~/.tmux.conf: tmux.conf
 
