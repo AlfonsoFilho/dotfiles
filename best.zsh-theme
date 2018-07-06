@@ -9,7 +9,7 @@ prompt_best_pwd() {
   #prompt_short_dir=$(short_pwd)
   #git_root=$(command git rev-parse --show-toplevel 2> /dev/null) && prompt_short_dir=${prompt_short_dir#${$(short_pwd $git_root):h}/}
   #print -n "%F{white}${prompt_short_dir}"i
-  print -n "%F{green}🖿 %~%f"
+  print -n "%F{green}📂 %~%f"
 }
 
 prompt_commit_hash() {
