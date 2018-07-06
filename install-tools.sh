@@ -30,15 +30,14 @@ sudo apt-get install -yq \
 sudo apt-get install -yq \
   gimp \
   inkscape \
-  code \
-  code-insiders
+  code
 
 # Git icdiff
 curl -s https://raw.githubusercontent.com/jeffkaufman/icdiff/release-1.9.0/icdiff | sudo tee /usr/local/bin/icdiff > /dev/null 
 sudo chmod ugo+rx /usr/local/bin/icdiff
 
 # NVM
-# curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
 
 # Zim
 # zsh zsh-install.zsh
