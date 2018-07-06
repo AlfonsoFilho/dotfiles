@@ -11,5 +11,9 @@ function about() {
   echo -e "Node: $(node -v)"
   echo -e "NPM: $(npm -v)"
   echo -e "Yarn: $(yarn --version)"
+  echo -e "Shell: $(echo $0)"
+}
 
+function reload() {
+  source ~/.zshrc
 }
