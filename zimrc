@@ -19,7 +19,6 @@ zmodules=(directory \
           history \
           input \
 #          utility \
-          meta \
           custom \
           syntax-highlighting \
           history-substring-search \
