@@ -10,18 +10,38 @@
     # set spacevim theme. by default colorscheme layer is not loaded,
     # if you want to use more colorscheme, please load the colorscheme
     # layer
-    colorscheme = "molokai"
+    colorscheme = "SpaceVim"
     colorscheme_bg = "dark"
     # Disable guicolors in basic mode, many terminal do not support 24bit
     # true colors
     enable_guicolors = true
     # Disable statusline separator, if you want to use other value, please
     # install nerd fonts
-    statusline_separator = "arrow"
-    statusline_inactive_separator = "arrow"
+    statusline_separator = "slant"
+    statusline_inactive_separator = "nil"
     buffer_index_type = 4
     enable_tabline_filetype_icon = true
-    enable_statusline_mode = false
+    enable_statusline_mode = true
+
+    # left sections of statusline
+    statusline_left_sections = [
+       'winnr',
+       'major mode',
+       'filename',
+       'fileformat',
+       'minor mode lighters',
+       'version control info',
+       'search status'
+    ]
+    # # right sections of statusline
+    statusline_right_sections = [
+        'syntax checking',
+        'cursorpos',
+        'percentage',
+        'input method',
+        'date',
+        'time'
+    ]
 
 # Enable autocomplete layer
 [[layers]]
@@ -33,3 +53,24 @@
     name = 'shell'
     default_position = 'top'
     default_height = 3
+
+[[layers]]
+    name = "git"
+
+[[layers]]
+    name = "VersionControl"
+
+[[layers]]
+    name = "lang#javascript"    
+    auto_fix = true
+
+[[layers]]
+    name = "lang#markdown"
+
+[[layers]]
+    name = "lang#typescript"
+
+[[layers]]
+    name = "checkers"
+    enable_neomake = false
+    enable_ale = true
