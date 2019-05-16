@@ -13,5 +13,6 @@
     ~/.zim/modules/prompt/functions/prompt_best_setup: best.zsh-theme
     ~/.gitconfig: gitconfig
     ~/.tmux.conf: tmux.conf
+    ~/.SpaceVim.d/init.toml: spacevim.init.toml              
 
 - shell: []
