@@ -44,6 +44,12 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 # Install NVM
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 
+# Install Node
+nvm install 14
+
+# Install JS CLI apps
+npm install -g gtop http-server fx  
+
 # GUI apps
 # sudo apt-get install -yq \
 #   gimp \
