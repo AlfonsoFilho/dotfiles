@@ -43,10 +43,13 @@ git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM
 
 # Install Fuzzy Finder
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-# ~/.fzf/install
+~/.fzf/install
 
 # Install NVM
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 
 # Install ICDiff 
 pip3 install git+https://github.com/jeffkaufman/icdiff.git
+
+# Install Navi
+brew install navi
