@@ -1,5 +1,6 @@
 [fetch]
 	prune = true
+
 [core]
 	editor = vim
 
@@ -20,3 +21,8 @@
 [user]
 	email = alfonsocfilho@gmail.com
 	name = Alfonso Filho
+
+[apply]
+
+	# Detect whitespace errors when applying a patch.
+	whitespace = fix

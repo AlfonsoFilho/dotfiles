@@ -24,3 +24,9 @@ alias gd="git difftool --no-prompt --extcmd \"icdiff -NH\""
 alias gl="git log --oneline --decorate --all --graph"
 alias ga="git add ."
 alias gcm="git commit"
+
+# IP addresses
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+
+# Reload the shell (i.e. invoke as a login shell)
+alias reload="exec ${SHELL} -l"
