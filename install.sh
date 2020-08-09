@@ -3,3 +3,4 @@
 set -e
 
 ./install-tools.sh
+./install-dotfiles.sh
