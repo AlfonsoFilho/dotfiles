@@ -24,3 +24,5 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=white'
 
 # Homebrew
 eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+
+export PATH="/home/alfonso/.local/bin:$PATH"

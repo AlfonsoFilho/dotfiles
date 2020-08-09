@@ -21,7 +21,8 @@ sudo apt-get install -yq \
   ranger \
   neovim \
   xclip \
-  shellcheck
+  shellcheck \
+  python3-pip
 
 # Set Zsh as default shell
 chsh -s $(which zsh)
@@ -42,27 +43,10 @@ git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM
 
 # Install Fuzzy Finder
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-~/.fzf/install
+# ~/.fzf/install
 
 # Install NVM
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 
-# Install Node
-nvm install 14
-
-# Install JS CLI apps
-npm install -g gtop http-server fx  
-
-# GUI apps
-# sudo apt-get install -yq \
-#   gimp \
-#   inkscape \
-#   code 
-
-# Git icdiff
-# curl -s https://raw.githubusercontent.com/jeffkaufman/icdiff/release-1.9.0/icdiff | sudo tee /usr/local/bin/icdiff > /dev/null 
-# sudo chmod ugo+rx /usr/local/bin/icdiff
-
-# NVM
-# curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
-
+# Install ICDiff 
+pip3 install git+https://github.com/jeffkaufman/icdiff.git

@@ -26,3 +26,10 @@
 
 	# Detect whitespace errors when applying a patch.
 	whitespace = fix
+
+[diff]
+	external = icdiff
+
+
+[icdiff]
+	options = --highlight --line-numbers
