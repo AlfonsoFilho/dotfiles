@@ -19,7 +19,7 @@ function mk() {
   mkdir -p "$@" && cd "$@"
 }
 
-function installNode() {
+function nvmUse() {
   local version="${1:-14}"
   nvm install $version
   npm install -g gtop http-server fx  
