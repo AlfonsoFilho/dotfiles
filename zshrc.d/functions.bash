@@ -13,3 +13,8 @@ function about() {
   echo -e "Yarn: $(yarn --version)"
 
 }
+
+# Create a new directory and enter it
+function mk() {
+  mkdir -p "$@" && cd "$@"
+}
