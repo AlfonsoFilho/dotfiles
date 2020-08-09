@@ -6,13 +6,10 @@
 - clean: ['~']
 
 - link: 
-    # ~/.bashrc: bashrc.bash
     ~/.zshrc: zshrc
     ~/.zlogin: zlogin
-    ~/.zimrc: zimrc
-    ~/.zim/modules/prompt/functions/prompt_best_setup: best.zsh-theme
-    ~/.gitconfig: gitconfig
-    ~/.tmux.conf: tmux.conf
-    ~/.SpaceVim.d/init.toml: spacevim.init.toml              
-
+    ~/.gitconfig: gitconfig`
+    ~/.p10k.zsh: p10k.zsh
+    # ~/.tmux.conf: tmux.conf
+    
 - shell: []
