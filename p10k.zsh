@@ -1494,7 +1494,11 @@
 
   function prompt_commit() {
     if [ "$(git rev-parse --is-inside-git-dir 2>/dev/null)" ]; then
-      p10k segment -f 208 -t $(git log -1 --pretty=oneline | cut -c -7)
+      if [ "$(git log --oneline 2>/dev/null)" ]; then
+        p10k segment -f 208 -t $(git log -1 --pretty=oneline | cut -c -7)
+      else
+        p10k segment -f 208 -t "no commit yet"
+      fi
     fi
   }
 
